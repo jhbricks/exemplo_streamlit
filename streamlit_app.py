@@ -1,8 +1,6 @@
 import streamlit
 import streamlit as st
-import folium
-import streamlit_folium
-from streamlit_folium import folium_static
+
 
 #Layout da página
 name = "Mapa da Desigualdade"
