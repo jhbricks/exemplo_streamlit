@@ -38,17 +38,17 @@ if options == "Paraná":
     st.multiselect('Multiselect', [1,2,3])
   else:
     col1, col2, col3 = st.columns((0.2,1,0.3))
-      with col1:
-        with st.expander("Fonte:"):
-        st.write("IBGE, [2010].")
-      with col2:
-        st.slider('Slide me', min_value=0, max_value=10)
-        st.select_slider('Slide to select', options=[1,'2'])
-        st.text_input('Enter some text')
-        st.number_input('Enter a number')
-        st.text_area('Area for textual entry')
-      with col3:
-        st.date_input('Date input')
-        st.time_input('Time entry')
-        st.file_uploader('File uploader')
-        st.color_picker('Pick a color')
+    with col1:
+      with st.expander("Fonte:"):
+      st.write("IBGE, [2010].")
+    with col2:
+      st.slider('Slide me', min_value=0, max_value=10)
+      st.select_slider('Slide to select', options=[1,'2'])
+      st.text_input('Enter some text')
+      st.number_input('Enter a number')
+      st.text_area('Area for textual entry')
+    with col3:
+      st.date_input('Date input')
+      st.time_input('Time entry')
+      st.file_uploader('File uploader')
+      st.color_picker('Pick a color')
