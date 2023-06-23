@@ -7,7 +7,6 @@ st.set_page_config(layout="wide", page_title=name)
 
 import streamlit as st
 
-[theme]
 primaryColor="#F63366"
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#F0F2F6"
