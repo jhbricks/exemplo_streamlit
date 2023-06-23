@@ -7,18 +7,12 @@ st.set_page_config(layout="wide", page_title=name)
 
 import streamlit as st
 
-st.markdown(
-    """
-    <link href="https://fonts.googleapis.com/css?family=Ysabeau+Office" rel="stylesheet">
-    <style>
-    body {
-        font-family: 'Ysabeau Office', sans-serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="Ysabeau Office"
 st.title("Meu Aplicativo Streamlit")
 st.write("Este é um exemplo de como usar uma fonte personalizada no Streamlit.")
 
