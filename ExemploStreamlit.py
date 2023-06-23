@@ -5,6 +5,24 @@ import streamlit as st
 name = "Mapa da Desigualdade"
 st.set_page_config(layout="wide", page_title=name)
 
+import streamlit as st
+
+st.markdown(
+    """
+    <link href="https://fonts.googleapis.com/css?family=Ysabeau+Office" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Ysabeau Office', sans-serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.title("Meu Aplicativo Streamlit")
+st.write("Este é um exemplo de como usar uma fonte personalizada no Streamlit.")
+
+
 #Opções do menu
 st.sidebar.markdown('# Mapa da Desigualdade')
 options = st.sidebar.selectbox("Selecione uma opção:", ("Paraná", "Núcleo Territorial Central"))
