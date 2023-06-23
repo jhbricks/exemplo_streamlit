@@ -54,22 +54,21 @@ m.add_data(
 )
 m
 col1, col2 = st.columns(2)
-#Coluna 1: 
-    with col1:
-      st.header('Maior e Menor Valor')
-      import pandas as pd
-      maior_populacao = dataframe['População'].max()
-      menor_populacao = dataframe['População'].min()
-      municipio_maior_populacao = dataframe.loc[dataframe['População'] == maior_populacao, 'Municípios'].iloc[0]
-      municipio_menor_populacao = dataframe.loc[dataframe['População'] == menor_populacao, 'Municípios'].iloc[0]
-      print(f"Maior: ({municipio_maior_populacao}) com {maior_populacao} habitantes")
-      print(f"Menor população: {menor_populacao} ({municipio_menor_populacao})")
-    with col2:
-      st.header('Observações:')
-      st.subheader('ANO BASE: 2021')
-      st.subheader('FÓRMULA: População total do município')
-      st.subheader('FONTE: IBGE, 2021')
-      st.subheader('OBSERVAÇÕES: População total de acordo com o censo do IBGE de 2021')
+with col1:
+  st.header('Maior e Menor Valor')
+  import pandas as pd
+  maior_populacao = dataframe['População'].max()
+  menor_populacao = dataframe['População'].min()
+  municipio_maior_populacao = dataframe.loc[dataframe['População'] == maior_populacao, 'Municípios'].iloc[0]
+  municipio_menor_populacao = dataframe.loc[dataframe['População'] == menor_populacao, 'Municípios'].iloc[0]
+  print(f"Maior: ({municipio_maior_populacao}) com {maior_populacao} habitantes")
+  print(f"Menor população: {menor_populacao} ({municipio_menor_populacao})")
+with col2:
+  st.header('Observações:')
+  st.subheader('ANO BASE: 2021')
+  st.subheader('FÓRMULA: População total do município')
+  st.subheader('FONTE: IBGE, 2021')
+  st.subheader('OBSERVAÇÕES: População total de acordo com o censo do IBGE de 2021')
             
         
 
