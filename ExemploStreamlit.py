@@ -5,7 +5,7 @@ import folium
 import geopandas as gpd
 import leafmap.foliumap as leafmap
 import pandas as pd
-
+from streamlit_extras.colored_header import colored_header
 
 
 PR = 'https://raw.githubusercontent.com/jhbricks/mapades/main/dados/geojson/PR.geojson'
@@ -16,6 +16,7 @@ ren = 'https://raw.githubusercontent.com/jhbricks/mapades/main/dados/csv/renda.c
 name = "Mapa da Desigualdade"
 st.set_page_config(layout="wide", page_title=name)
 
+
 #Opções do menu
 st.sidebar.markdown('# Mapa da Desigualdade')
 HOME = st.sidebar.button('Página inicial')
@@ -24,13 +25,17 @@ ABOUT = st.sidebar.button('Sobre')
 
 
 if options == "Paraná":
-  st.subheader("Mapa da Desigualdade do Paraná")
+  #st.subheader("Mapa da Desigualdade do Paraná")
   categoria = st.sidebar.selectbox("Selecione uma categoria:", ("Contextualização", "Renda e Riqueza", "Municípios", "Categoria 4"))
   st.sidebar.markdown("**Dica:** Feche este menu para uma melhor visualização dos mapas.")
   if categoria == "Contextualização":
+    colored_header(
+    label="Contextualização",
+    description="Contextualização do estado do Paraná",
+    color_name="red-70",)
     cat2 = st.sidebar.selectbox("Selecione uma categoria:", ("Geral", "População", "CAT2", "Categoria 4"))
     if cat2 == "Geral":
-      st.header("Como ler mapas")
+      #st.header("Como ler mapas")
       df_csv = pd.read_csv(ren)
       gdf_geojson = gpd.read_file(PR)
       merged_gdf = gdf_geojson.merge(df_csv, on="Município")
