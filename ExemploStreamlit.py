@@ -77,7 +77,7 @@ if options == "Paraná":
 
         #st.markdown("<h3><font size='6'  color='green'>Maior</font>  <font size='5' color='black'>e</font> <font size='6' color='red'>Menor</font> <font size='5' color='black'>valor:</font></h3>",
          #           unsafe_allow_html=True)
-        st.markdown("<h3><font size='5'  color='black'>Municípios com o </font> <font size='6color='green'>maior</font>  <font size='5' color='black'>e</font> <font size='6' color='red'>menor</font> <font size='5' color='black'>valor:</font></h3>",
+        st.markdown("<h3><font size='5'  color='black'>Municípios com o </font> <font size='6 color='green'>maior</font>  <font size='5' color='black'>e</font> <font size='6' color='red'>menor</font> <font size='5' color='black'>valor:</font></h3>",
                     unsafe_allow_html=True)
         
         
