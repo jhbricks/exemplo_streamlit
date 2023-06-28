@@ -104,7 +104,8 @@ if options == "Paraná":
 
       with col2:
         media = merged_gdf["Índice de Gini da Renda Domiciliar per Capita (2010)"].mean().round(2)
-        st.markdown(f"<font size='6' Média:</font> <font size='+6' color='black'>{media}</font>", unsafe_allow_html=True)
+        st.subheader("Média:")
+        st.subheader(media)
         
         
         st.button('Hit me')
