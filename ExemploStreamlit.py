@@ -75,7 +75,7 @@ if options == "Paraná":
       col1, col2 = st.columns(2)
       with col1:
         #st.subheader(':green[Maior] :black[e] :red[menor] :black[valor do indicador:]')
-        st.markdown(f"<font size = '+8':green:[Maior] :black[e] :red:[menor] :black:[valor do indicador:]</font>",
+        st.markdown(f"<font size = '+8'color='green'>Maior color='black'>e color='red'>menor color='black'valor do indicador:</font>",
                     unsafe_allow_html=True)
         arrow_d = '\U0001F82B'  # Ícone de seta para baixo
         arrow_u = '\U0001F829'  # Ícone de seta para cima
@@ -83,9 +83,9 @@ if options == "Paraná":
         max_str = f"{max_municipio}"
         ind_mn = f"{min_value}"
         ind_mx = f"{max_value}"
-        st.markdown(f"<font size='+10' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str} {ind_mx}</font>",
+        st.markdown(f"<font size='+10' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str} = {ind_mx}</font>",
                     unsafe_allow_html=True)
-        st.markdown(f"<font size='+10' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} com {ind_mn}</font>",
+        st.markdown(f"<font size='+10' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} = {ind_mn}</font>",
                     unsafe_allow_html=True)
 
 
