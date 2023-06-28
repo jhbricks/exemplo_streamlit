@@ -77,10 +77,11 @@ if options == "Paraná":
 
         st.markdown("<h3><font size='5'  color='green'>Maior</font>  <font size='5' color='black'>e</font> <font size='5' color='red'>Menor</font> <font size='5' color='black'>valor do indicador</font></h3>",
                     unsafe_allow_html=True)
-        st.subheader(:green[Maior])
+        st.subheader(':green[Maior]')
         st.markdown("<h3> <font size = '3' color='black> e </font> <font size = '7' color='black'> valor do indicador</font></h3>",
                     unsafe_allow_html=True)
-        st.subheader(:red[Menor])
+        st.subheader(':red[Menor]')
+        
 
         arrow_d = '\U0001F82B'  # Ícone de seta para baixo
         arrow_u = '\U0001F829'  # Ícone de seta para cima
