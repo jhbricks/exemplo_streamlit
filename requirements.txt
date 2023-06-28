@@ -1,3 +1,7 @@
-altair
 pandas
 streamlit
+folium
+streamlit_folium
+leafmap
+geopandas
+mapclassify
