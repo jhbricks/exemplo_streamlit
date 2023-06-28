@@ -74,15 +74,13 @@ if options == "Paraná":
       m.to_streamlit()
       col1, col2 = st.columns(2)
       with col1:
-        arrow_icon = '\u2193'
-        output_str = f"{min_municipio}"
-        st.text(output_str)
-        st.header(':green[arrow_icon]'), st.subheader(output_str)
-        header_size = "30px"
-        subheader_size = "20px"
-        header_html = f"<h1 style='font-size:{header_size}'>(arrow_icon)</h1>"
-        subheader_html = f"<h2 style='font-size:{subheader_size}'>(output_str)</h2>"
-        st.markdown(f"<div style='display:flex; align-items:center;'>{header_html}{subheader_html}</div>", unsafe_allow_html=True)
+        arrow_d = '\u0001F82B'
+        min_str = f"{min_municipio}"
+        arrow_u = '\u0001F829'
+        max_str = f{max_municipio}
+        st.header(':green[arrow_u] :black[max_str]')
+        st.header(':red[arrow_d] :black[min_str]')
+
 
       with col2:
         st.button('Hit me')
