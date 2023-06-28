@@ -29,7 +29,7 @@ if options == "Paraná":
   categoria = st.sidebar.selectbox("Selecione uma categoria:", ("Contextualização", "Renda e Riqueza", "Municípios", "Categoria 4"))
   st.sidebar.markdown("**Dica:** Feche este menu para uma melhor visualização dos mapas.")
   if categoria == "Contextualização":
-    st.header("Contextualização")    
+    st.header(":red[Contextualização]")    
     cat2 = st.sidebar.selectbox("Selecione uma categoria:", ("Geral", "População", "CAT2", "Categoria 4"))
     if cat2 == "Geral":
       #st.header("Como ler mapas")
@@ -104,8 +104,8 @@ if options == "Paraná":
 
       with col2:
         media = merged_gdf["Índice de Gini da Renda Domiciliar per Capita (2010)"].mean().round(2)
-        st.subheader("Média:")
-        st.subheader(media)
+        st.subheader(f" Média: {media}")
+        
         
         
         st.button('Hit me')
