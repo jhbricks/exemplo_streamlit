@@ -1,5 +1,6 @@
 pandas
 streamlit
+streamlit-extras
 folium
 streamlit_folium
 leafmap
