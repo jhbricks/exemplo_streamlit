@@ -89,9 +89,9 @@ if options == "Paraná":
         ind_mn = f"{min_value}"
         ind_mx = f"{max_value}"
         #st.markdown(f"<font size='+14' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str} = {ind_mx}</font>",
-                    unsafe_allow_html=True)
+                   # unsafe_allow_html=True)
         #st.markdown(f"<font size='+14' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} = {ind_mn}</font>",
-                    unsafe_allow_html=True)
+                    #unsafe_allow_html=True)
         st.markdown(f"<p style='line-height: 0.9;'><font size='+14' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str} = {ind_mx}</font></p>",
                     unsafe_allow_html=True)
         st.markdown(
