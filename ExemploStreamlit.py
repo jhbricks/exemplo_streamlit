@@ -74,11 +74,10 @@ if options == "Paraná":
       m.to_streamlit()
       col1, col2 = st.columns(2)
       with col1:
-        arrow_icon = '<span style="font-size: 20px; color: green">&#x2193;</span>'  # Ícone de flecha verde para baixo
-        font_style = 'style="font-size: 20px; font-family: Arial, sans-serif"'  # Estilo de fonte personalizada
-        output_str = f"Menor valor Gini: {arrow_icon} <span {font_style}>{min_value}</span>  Município: {min_municipio}"
+        arrow_icon = '\u2193'
+        output_str = f"{arrow_icon} {min_municipio}"
         st.text(output_str)
-        st.markdown('_Markdown_') # see *
+        st.subheader(output_str) 
       with col2:
         st.button('Hit me')
         
