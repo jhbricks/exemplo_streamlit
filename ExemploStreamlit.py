@@ -77,7 +77,7 @@ if options == "Paraná":
         arrow_icon = '<span style="font-size: 20px; color: green">&#x2193;</span>'  # Ícone de flecha verde para baixo
         font_style = 'style="font-size: 20px; font-family: Arial, sans-serif"'  # Estilo de fonte personalizada
         output_str = f"Menor valor Gini: {arrow_icon} <span {font_style}>{min_value}</span>  Município: {min_municipio}"
-        st.text(outpur_str)
+        st.text(output_str)
         st.markdown('_Markdown_') # see *
       with col2:
         st.button('Hit me')
