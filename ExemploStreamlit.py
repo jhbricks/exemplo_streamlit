@@ -29,10 +29,20 @@ if options == "Paraná":
   categoria = st.sidebar.selectbox("Selecione uma categoria:", ("Contextualização", "Renda e Riqueza", "Municípios", "Categoria 4"))
   st.sidebar.markdown("**Dica:** Feche este menu para uma melhor visualização dos mapas.")
   if categoria == "Contextualização":
-    colored_header(
-    label="Contextualização",
-    description="Contextualização do estado do Paraná",
-    color_name="red-70",)
+    
+    def colored_header(
+      label: str = "Contextualização",
+      description: str = "do estado do Paraná",
+      color_name: _SUPPORTED_COLORS = "red-70",):
+     if color_name is None:
+       color_name = next(HEADER_COLOR_CYCLE)
+       st.subheader(':red[label]')
+       st.write(f'<hr style="background-color: {color(color_name)}; margin-top: 0;'
+                ' margin-bottom: 0; height: 3px; border: none; border-radius: 3px;">',
+                unsafe_allow_html=True,)
+      if description:
+        st.markdown(f"<p><font size='4' color='red'{description}</font></p>)
+    
     cat2 = st.sidebar.selectbox("Selecione uma categoria:", ("Geral", "População", "CAT2", "Categoria 4"))
     if cat2 == "Geral":
       #st.header("Como ler mapas")
