@@ -102,9 +102,11 @@ if options == "Paraná":
           f"<p style='line-height: 0.5;'><font size='+14' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} = {ind_mn}</font></p>",
           unsafe_allow_html=True)
 
-
-
       with col2:
+        media = merged_gdf["Índice de Gini da Renda Domiciliar per Capita (2010)"].mean().round(2)
+        st.markdown(f"<font size='6' Média:</font> <font size='+6' color='black'>{media}</font>", unsafe_allow_html=True))
+        
+        
         st.button('Hit me')
         
       
