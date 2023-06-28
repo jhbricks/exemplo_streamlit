@@ -75,8 +75,7 @@ if options == "Paraná":
       col1, col2 = st.columns(2)
       with col1:
         #st.subheader(':green[Maior] :black[e] :red[menor] :black[valor do indicador:]')
-        st.markdown("<font size = '+8'color='green'>Maior</font> color='black'>e</font> color='red'>menor</font> color='black'> valor do indicador:</font>",
-                    unsafe_allow_html=True)
+        st.markdown(':green[Maior] :black[e] :red[menor] :black[valor do indicador:]')
         arrow_d = '\U0001F82B'  # Ícone de seta para baixo
         arrow_u = '\U0001F829'  # Ícone de seta para cima
         min_str = f"{min_municipio}"
