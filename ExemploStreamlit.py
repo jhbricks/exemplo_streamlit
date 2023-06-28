@@ -78,9 +78,9 @@ if options == "Paraná":
         arrow_u = '\U0001F829'  # Ícone de seta para cima
         min_str = f"{min_municipio}"
         max_str = f"{max_municipio}"
-        st.markdown(f"<font size='+10' color='green'>{arrow_u}</font> <font size='+5' color='black'>{max_str}</font>",
+        st.markdown(f"<font size='+10' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str}</font>",
                     unsafe_allow_html=True)
-        st.markdown(f"<font size='+10' color='red'>{arrow_d}</font> <font size='+3' color='black'>{min_str}</font>",
+        st.markdown(f"<font size='+10' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str}</font>",
                     unsafe_allow_html=True)
 
 
