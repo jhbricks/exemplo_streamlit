@@ -1,7 +1,7 @@
 import streamlit
 import streamlit as st
+from streamlit_folium import folium_static
 import folium
-import streamlit_folium
 import geopandas as gpd
 import leafmap.foliumap as leafmap
 import pandas as pd
