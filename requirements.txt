@@ -1,7 +1,6 @@
 pandas
 streamlit
 streamlit-extras
-streamlit_extras.colored_header
 folium
 streamlit_folium
 leafmap
