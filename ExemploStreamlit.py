@@ -75,7 +75,7 @@ if options == "Paraná":
       col1, col2 = st.columns(2)
       with col1:
 
-        st.markdown("<h3><font size='5' color='green'>Maior</font><font size='5' <font size='4' color='black'>e</font> color='red'>Menor</font> <font size='5' color='green'>maior</font> <font size='4' color='black'>valor do indicador</font></h3>",
+        st.markdown("<h3><font size='5'  color='green'>Maior</font>  <font size='5' color='black'>e</font> <font size='5' color='red'>Menor</font> <font size='5' color='black'>valor do indicador</font></h3>",
                     unsafe_allow_html=True)
 
         arrow_d = '\U0001F82B'  # Ícone de seta para baixo
