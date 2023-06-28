@@ -75,9 +75,9 @@ if options == "Paraná":
       col1, col2 = st.columns(2)
       with col1:
         arrow_icon = '\u2193'
-        output_str = f"{arrow_icon} {min_municipio}"
+        output_str = f"{min_municipio}"
         st.text(output_str)
-        st.subheader(output_str) 
+        st.header(:green[colors] arrow_icon) st.subheader(output_str) 
       with col2:
         st.button('Hit me')
         
