@@ -77,7 +77,7 @@ if options == "Paraná":
         arrow_d = '\u0001F82B'
         min_str = f"{min_municipio}"
         arrow_u = '\u0001F829'
-        max_str = f{max_municipio}
+        max_str = f"{max_municipio}"
         st.header(':green[arrow_u] :black[max_str]')
         st.header(':red[arrow_d] :black[min_str]')
 
