@@ -41,7 +41,8 @@ if options == "Paraná":
                 ' margin-bottom: 0; height: 3px; border: none; border-radius: 3px;">',
                 unsafe_allow_html=True,)
       if description:
-        st.markdown(f"<p><font size='4' color='red'{description}</font></p>)
+        st.markdown(f"<p><font size='4' color='red'{description}</font></p>",
+        unsafe_allow_html = True,)
     
     cat2 = st.sidebar.selectbox("Selecione uma categoria:", ("Geral", "População", "CAT2", "Categoria 4"))
     if cat2 == "Geral":
