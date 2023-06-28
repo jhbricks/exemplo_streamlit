@@ -74,13 +74,16 @@ if options == "Paraná":
       m.to_streamlit()
       col1, col2 = st.columns(2)
       with col1:
+        st.subheader(':green[Maior] :black[e] :red[menor] :black[valor do indicador:]')
         arrow_d = '\U0001F82B'  # Ícone de seta para baixo
         arrow_u = '\U0001F829'  # Ícone de seta para cima
         min_str = f"{min_municipio}"
         max_str = f"{max_municipio}"
-        st.markdown(f"<font size='+10' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str}</font>",
+        ind_mn = f"{min_value}"
+        ind_mx = f"{max_value}"
+        st.markdown(f"<font size='+10' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str} {ind_mx}</font>",
                     unsafe_allow_html=True)
-        st.markdown(f"<font size='+10' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str}</font>",
+        st.markdown(f"<font size='+10' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} com {ind_mn}</font>",
                     unsafe_allow_html=True)
 
 
