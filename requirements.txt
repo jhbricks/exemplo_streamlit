@@ -9,3 +9,4 @@ mapclassify
 
 fontawesome
 pillow
+iconify
