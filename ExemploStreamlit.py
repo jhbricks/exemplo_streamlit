@@ -85,8 +85,13 @@ if options == "Paraná":
         import streamlit as st
         from PIL import Image
         from fontawesome import icons
+        from streamlit.components.v1 import fontawesome as fa
 
-        st.markdown('<i class="{}" style="color: green;"></i> Maior valor'.format(icons.arrow_up), unsafe_allow_html=True)     
+        fa.load()
+
+        st.markdown('<i class="{}" style="color: green;"></i> Maior valor'.format(fa.icons["arrow-up"]), unsafe_allow_html=True)
+
+        #st.markdown('<i class="{}" style="color: green;"></i> Maior valor'.format(icons.arrow_up), unsafe_allow_html=True)     
 
         
 
