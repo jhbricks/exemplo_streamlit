@@ -6,3 +6,6 @@ streamlit_folium
 leafmap
 geopandas
 mapclassify
+
+fontawesome
+pillow
