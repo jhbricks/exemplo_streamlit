@@ -82,7 +82,11 @@ if options == "Paraná":
         st.markdown("<h3><font size='5'  color='black'>Municípios com o </font> <font size='6'  color='green'>maior</font>  <font size='5' color='black'>e</font> <font size='6' color='red'>menor</font> <font size='5' color='black'>valor:</font></h3>",
                     unsafe_allow_html=True)
         
-        
+        import streamlit as st
+        from PIL import Image
+        from fontawesome import icons
+
+        st.markdown('<i class="{}" style="color: green;"></i> Maior valor'.format(icons.arrow_up), unsafe_allow_html=True)     
 
         
 
