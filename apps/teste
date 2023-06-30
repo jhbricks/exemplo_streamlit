@@ -7,6 +7,7 @@ import leafmap.foliumap as leafmap
 import pandas as pd
 from streamlit_extras.colored_header import colored_header
 
+def app():
 
 PR = 'https://raw.githubusercontent.com/jhbricks/mapades/main/dados/geojson/PR.geojson'
 NTC = 'https://raw.githubusercontent.com/jhbricks/mapades/main/dados/geojson/NTC.geojson'
