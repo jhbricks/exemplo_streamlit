@@ -65,7 +65,7 @@ class MultiApp:
         functions[titles.index(title)]()
 
         st.sidebar.title("Sobre")
-        st.sidebar.info(
+        st.sidebar.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
 
         st.sidebar.title("Instituição")
