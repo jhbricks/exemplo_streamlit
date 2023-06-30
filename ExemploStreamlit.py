@@ -86,15 +86,15 @@ if options == "Paraná":
         max_str = f"{max_municipio}"
         ind_mn = f"{min_value}"
         ind_mx = f"{max_value}"
+        
         #st.markdown(f"<font size='+14' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str} = {ind_mx}</font>",
                    # unsafe_allow_html=True)
         #st.markdown(f"<font size='+14' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} = {ind_mn}</font>",
                     #unsafe_allow_html=True)
         st.markdown(f"<p style='line-height: 0.7;'><font size='+14' color='green'>{arrow_u}</font> <font size='+5' color='black'>{max_str} = {ind_mx}</font></p>",
                     unsafe_allow_html=True)
-        st.markdown(
-          f"<p style='line-height: 0.5;'><font size='+14' color='red'>{arrow_d}</font> <font size='+5' color='black'>{min_str} = {ind_mn}</font></p>",
-          unsafe_allow_html=True)
+        st.markdown(f"<p style='line-height: 0.5;'><font size='+14' color='red'>{arrow_d}</font> <font size='+5' color='black'>{min_str} = {ind_mn}</font></p>",
+                    unsafe_allow_html=True)
 
       with col2:
         media = merged_gdf["Índice de Gini da Renda Domiciliar per Capita (2010)"].mean().round(2)
