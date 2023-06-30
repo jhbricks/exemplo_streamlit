@@ -77,24 +77,9 @@ if options == "Paraná":
       col1, col2 = st.columns(2)
       with col1:
 
-        #st.markdown("<h3><font size='6'  color='green'>Maior</font>  <font size='5' color='black'>e</font> <font size='6' color='red'>Menor</font> <font size='5' color='black'>valor:</font></h3>",
-         #           unsafe_allow_html=True)
-        st.markdown("<h3><font size='5'  color='black'>Municípios com o </font> <font size='6'  color='green'>maior</font>  <font size='5' color='black'>e</font> <font size='6' color='red'>menor</font> <font size='5' color='black'>valor:</font></h3>",
+        st.markdown("<h3><font size='5'  color='black'>Municípios com o </font> <font size='5'  color='green'>maior</font>  <font size='5' color='black'>e</font> <font size='5' color='red'>menor</font> <font size='5' color='black'>valor:</font></h3>",
                     unsafe_allow_html=True)
         
-        import streamlit as st
-        from PIL import Image
-        from fontawesome import icons
-        from streamlit.components.v1 import fontawesome as fa
-
-        fa.load()
-
-        st.markdown('<i class="{}" style="color: green;"></i> Maior valor'.format(fa.icons["arrow-up"]), unsafe_allow_html=True)
-
-        #st.markdown('<i class="{}" style="color: green;"></i> Maior valor'.format(icons.arrow_up), unsafe_allow_html=True)     
-
-        
-
         arrow_d = '\U0001F82B'  # Ícone de seta para baixo
         arrow_u = '\U0001F829'  # Ícone de seta para cima
         min_str = f"{min_municipio}"
@@ -105,17 +90,16 @@ if options == "Paraná":
                    # unsafe_allow_html=True)
         #st.markdown(f"<font size='+14' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} = {ind_mn}</font>",
                     #unsafe_allow_html=True)
-        st.markdown(f"<p style='line-height: 0.7;'><font size='+14' color='green'>{arrow_u}</font> <font size='+6' color='black'>{max_str} = {ind_mx}</font></p>",
+        st.markdown(f"<p style='line-height: 0.7;'><font size='+14' color='green'>{arrow_u}</font> <font size='+5' color='black'>{max_str} = {ind_mx}</font></p>",
                     unsafe_allow_html=True)
         st.markdown(
-          f"<p style='line-height: 0.5;'><font size='+14' color='red'>{arrow_d}</font> <font size='+6' color='black'>{min_str} = {ind_mn}</font></p>",
+          f"<p style='line-height: 0.5;'><font size='+14' color='red'>{arrow_d}</font> <font size='+5' color='black'>{min_str} = {ind_mn}</font></p>",
           unsafe_allow_html=True)
 
       with col2:
         media = merged_gdf["Índice de Gini da Renda Domiciliar per Capita (2010)"].mean().round(2)
         st.subheader(f" Média: {media}")
-        
-        
+                
         
         st.button('Hit me')
         
